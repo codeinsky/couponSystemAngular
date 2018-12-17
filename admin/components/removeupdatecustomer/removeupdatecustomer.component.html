@@ -1,0 +1,38 @@
+<h4>Remove/Update customer</h4>
+<div class="panel panel-primary" style="height:110px;width: 20%;">
+	<div class="panel-heading">
+		<label class="radio-inline"><input type="radio" name="byId" checked>Search by ID</label>
+		<label class="radio-inline"><input type="radio" name="byName">Search by Name</label>
+		<input type="text" name="" class="form-control" [(ngModel)]="customerId" placeholder="Company Name or ID number">
+		</div>
+		<button (click)="getCustomerById()" class="btn btn-primary" class="btn btn-primary btn-block">Find Customer</button>
+	
+</div>
+	
+<div class="panel panel-primary" style="height:360px ;width: 20%;">
+	<div class="panel-heading"><h5>Customer</h5></div> 
+	<br>
+		<form  style="margin-left: 10px; margin-right: 10px">
+			
+				
+					<label for="">Customer ID</label>
+					<input type="number" name="id" class="form-control" [(ngModel)]="updateCustomer.id"> 
+			
+	<br>
+			
+				<label for="">Customer Name</label>
+				<input type="text" name="name" class="form-control" [(ngModel)]="updateCustomer.custName">
+		
+	<br>
+
+			
+				<label for="">Password</label>
+				<input type="passwod" name="password" class="form-control" [(ngModel)]="updateCustomer.password">
+			
+	<br>
+
+	<button (click)="removeCustomer()" class="btn btn-primary">Remove Customer</button>&nbsp;&nbsp;&nbsp;
+	<button (click)="updateTheCustomer()" class="btn btn-primary">Update Customer</button>
+
+</form>
+</div>

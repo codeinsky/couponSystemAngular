@@ -1,0 +1,23 @@
+
+	
+		<div class="panel panel-primary" style="height:355px;width: 20%;">
+	<div class="panel-heading"><h5>Add New Customer</h5></div> 
+	<br>
+		<form class="form-horizontal" style="margin-left: 10px; margin-right: 10px ;margin-right: 10px ;">
+		
+					<label for="">Customer ID</label>
+					<input type="number" name="id" class="form-control" [(ngModel)]="addCustomer.id"> 
+				
+	<br>
+				<label for="">Customer Name</label>
+				<input type="text" name="name" class="form-control" [(ngModel)]="addCustomer.custName">{{addCustomer.name}}
+	<br>
+
+				<label for="">Password</label>
+				<input type="passwod" name="password" class="form-control" [(ngModel)]="addCustomer.password">
+	<br>
+	<button (click)="addNewCustomer()" class="btn btn-primary">Add customer</button>
+	<br>
+</form>
+</div>
+

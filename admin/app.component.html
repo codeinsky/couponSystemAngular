@@ -1,0 +1,27 @@
+<div class="panel">
+	<div class="panel-heading"><h1>Welcome to admin home page</h1></div>
+</div>	
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="#">Home</a></li>
+            <li><a routerLink="/getallcompanies">Get All Companies</a></li>
+            <li><a routerLink="/createcompany">Create Copmany</a></li>
+            <li><a routerLink="/removecopmany">Remove/Update Company</a></li>
+            <li><a routerLink="/addcustomer">Add Customer</a></li>
+            <li><a routerLink="/removeupadecustomer">Remove/Update Customer</a></li>
+            <li><a routerLink="/getallcustomers">Get All Customers</a></li>
+        </ul>
+        
+    </div>
+</nav>
+<router-outlet></router-outlet>

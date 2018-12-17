@@ -1,0 +1,36 @@
+<div class="panel panel-primary" style="height:110px;width: 20%; margin: 2%">
+	<div class="panel-heading">
+		<label class="radio-inline"><input type="radio" name="byId" checked>Search by ID</label>
+		<label class="radio-inline"><input type="radio" name="byName">Search by Name</label>
+		<input type="text" name="" class="form-control" [(ngModel)]="couponId" placeholder="Coupon Name or ID number">
+		</div>
+		<button (click)="getCouponById()" class="btn btn-primary" class="btn btn-primary btn-block">Find Cuopon</button>
+	
+</div>
+<div class="panel panel-primary" style="width: 20% ; margin: 2%" >
+	<div class="panel-heading">
+		<h5 style="font-weight: bold;">Create new Coupon</h5>
+	</div>
+	<form class="form" style="margin : 2%">
+		<label for="">Coupon ID</label>
+		<input name="id" type="number" class="form-control" [(ngModel)]="coupon.id">
+		<label for="">Coupon Title</label>
+		<input name="title" type="text" class="form-control" [(ngModel)]="coupon.title">
+		<label for="">Start Date</label>
+		<input name="startDate" type="text" class="form-control" [(ngModel)]="coupon.startDate">
+		<label for="">End Date</label>
+		<input name="endDate" type="text" class="form-control" [(ngModel)]="coupon.endDate">
+		<label for="">Amount</label>
+		<input name="amount" type="number" class="form-control" [(ngModel)]="coupon.amount">
+		<label for="">Coupon Type</label>
+		<input name="type" type="text" class="form-control" [(ngModel)]="coupon.type">
+		<label for="">Message</label>
+		<input name="message" type="text" class="form-control" [(ngModel)]="coupon.message">
+		<label for="">Price</label> 
+		<input name="price" type="number" class="form-control" [(ngModel)]="coupon.price">
+		<label for="">Image</label>
+		<input name="image" type="text" class="form-control" [(ngModel)]="coupon.image">
+		<button style="margin: 1%"class="btn btn-primary" (click)="removeCoupon()">Remove</button>
+		<button style="margin: 1%"class="btn btn-primary" (click)="updateCoupon()">Update</button>
+	</form>
+</div>

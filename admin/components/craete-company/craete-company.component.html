@@ -1,0 +1,22 @@
+<div class="panel panel-primary" style="width:20%; margin:1%" >
+	<div class="panel-heading"><h5 style="font-weight: bold">Create company</h5></div>
+
+<form class="form-horizontal" style="margin:5px">
+		<label for="">Enter Company ID</label>
+		<input type="number" name="id" class="form-control" [(ngModel)]="addCompany.id" placeholder="01"> 
+	<br>
+		<label for="">Enter Company Name</label>
+		<input type="text"  class="form-control" [(ngModel)]="addCompany.compName" placeholder="Company" name="compName">
+	<br>
+		<label for="">Enter Password</label>
+		<input type="passwod" name="password" class="form-control" [(ngModel)]="addCompany.password"
+		placeholder="1234">
+	<br>
+		<label for="">Enter Email</label> 
+		<input type="text" name="email" class="form-control" [(ngModel)]="addCompany.email" placeholder="email@email.com"> 
+	<br>
+
+	<button (click)="createCompany()" class="btn btn-primary" style="margin-bottom: ">Create Company</button>
+
+</form>
+</div>

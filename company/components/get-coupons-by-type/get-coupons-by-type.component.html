@@ -1,0 +1,53 @@
+<div class="panel panel-primary" style="height:110px;width: 20%; margin: 2%">
+	<div class="panel-heading"></div>
+		<select name="" id=""   >
+			<option value="">RESTAURANTS</option>
+			<option value="">ELECTRICITY</option>
+			<option value="">Health</option>
+			<option value="">Sports</option>
+			<option value="">Campning</option>
+			<option value="">Travelling</option>
+		</select>
+
+		<button (click)="getCouponById()" class="btn btn-primary">Find Cuopon</button>
+	
+</div>
+<div class="panel panel-primary" style="margin: 5%">
+	<div class="panel-heading">
+		<h5 style="font-weight: bold ">All Coupons</h5>
+	</div>
+	<table class="table table-striped table-bordered">
+		<tr>
+			<th>Id</th>
+			<th>Title</th>
+			<th>Start Date</th>
+			<th>End Date</th>
+			<th>Amount</th>
+			<th>Coupon Type</th>
+			<th>Message</th>
+			<th>Price</th>
+			<th>Image</th>
+		</tr>
+		<tr *ngFor="let coupon of _couponList">
+			<td>{{coupon.id}}</td>
+			<td>{{coupon.title}}</td>
+			<td>{{coupon.startDate}}</td>
+			<td>{{coupon.endDate}}</td>
+			<td>{{coupon.amount}}</td>
+			<td>{{coupon.type}}</td>
+			<td>{{coupon.message}}</td>
+			<td>{{coupon.price}}</td>
+			<td>{{coupon.image}}</td>
+		</tr>
+		<button (click)="getAllCoupons()">Gett All Coupons</button>
+		<select name="" id=""   >
+			<option value="">RESTAURANTS</option>
+			<option value="">ELECTRICITY</option>
+			<option value="">Health</option>
+			<option value="">Sports</option>
+			<option value="">Campning</option>
+			<option value="">Travelling</option>
+		</select>
+
+		<button (click)="getCouponById()" class="btn btn-primary">Find Cuopon</button>	</table>
+</div>
