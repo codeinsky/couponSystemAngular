@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ComapnyService} from  './services/comapny.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'company';
+  constructor (private _companyService:ComapnyService) {
+
+  }
+logOut(){
+	console.log ("LogOut");
+	this._companyService.logOutService();
+}
 }
